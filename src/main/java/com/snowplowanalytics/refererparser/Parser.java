@@ -259,15 +259,6 @@ public class Parser {
 
         // Validate
         List<String> parameters = refererMap.get("parameters");
-        if (medium == Medium.SEARCH) {
-          if (parameters == null) {
-            throw new CorruptYamlException("No parameters found for search referer '" + sourceName + "'");
-          }
-        } else {
-          if (parameters != null) {
-            throw new CorruptYamlException("Parameters not supported for non-search referer '" + sourceName + "'");
-          }
-        }
         List<String> domains = refererMap.get("domains");
         if (domains == null) { 
           throw new CorruptYamlException("No domains found for referer '" + sourceName + "'");
