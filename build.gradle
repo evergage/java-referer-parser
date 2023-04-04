@@ -15,7 +15,7 @@ plugins {
 
 group = 'com.evergage.thirdparty.snowplowanalytics'
 archivesBaseName = 'java-referer-parser'
-version = '0.4.0-rc4-evg2'
+version = '0.4.0-rc4-evg3'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
